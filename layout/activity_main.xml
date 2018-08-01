@@ -14,7 +14,8 @@
         android:layout_centerInParent="true"
         android:background="#11000000"
         android:ems="10"
-        android:hint="@string/nome"
+       android:hint="Nome"
+        android:textColorHint="#ffffff"
         android:inputType="textPersonName" />
 
     <EditText
@@ -26,36 +27,34 @@
         android:layout_marginBottom="217dp"
         android:background="#11000000"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="Password"
+        android:textColorHint="#ffffff"
         android:inputType="textPassword" />
 
 
     <Button
         android:id="@+id/register_button"
-        android:layout_width="120dp"
+        android:layout_width="110dp"
         android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:text="REGISTAR"
+        android:textColor="#ffffff"
         android:layout_marginBottom="21dp"
         android:background="#11000000" />
 
-    <TextView
-        android:layout_width="110dp"
-        android:layout_height="30dp"
-        android:layout_centerHorizontal="true"
-        android:hint="@string/registar"
-        android:textColorHint="#0A0808" />
+
 
     <Button
+        android:id="@+id/login_button"
         android:textColor="#8e8e8e"
         android:background="@drawable/button_login_style"
-        android:id="@+id/login_button"
         android:layout_width="250dp"
         android:layout_height="37dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="92dp"
-        android:text="@string/login" />
+        android:text="Login" />
 
     <ProgressBar
         android:id="@+id/login_progress"
@@ -63,6 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_alignTop="@+id/login_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        tools:ignore="UnknownId" />
 
 </RelativeLayout>
