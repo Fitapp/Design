@@ -7,6 +7,16 @@
     android:background="@drawable/menu_gradient"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:hint="FITapp"
+        android:textColorHint="#ffffff"
+        android:textSize="75dp"
+        />
     <EditText
         android:id="@+id/name_button"
         android:layout_width="180dp"
@@ -14,9 +24,9 @@
         android:layout_centerInParent="true"
         android:background="#11000000"
         android:ems="10"
-       android:hint="Nome"
+       android:hint="Email"
         android:textColorHint="#ffffff"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/pass_button"
@@ -43,6 +53,15 @@
         android:layout_marginBottom="21dp"
         android:background="#11000000" />
 
+    <TextView
+        android:id="@+id/esqueceu_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:hint="Esqueceu a Password"
+        android:textColorHint="#ffffff" />
 
 
     <Button
