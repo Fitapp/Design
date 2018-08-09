@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:hint="FITapp"
+        android:textColorHint="#ffffff"
+        android:textSize="75dp"
+        />
+
+    <EditText
+        android:id="@+id/email_space"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_space"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="217dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTAR"
+        android:textColor="#ffffff"
+        android:onClick="openactivity_registo"
+        android:layout_marginBottom="21dp"
+        android:background="#11000000"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/esqueceu_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:hint="Esqueceu a Password"
+        android:onClick="openactivity_esqueceupassword"
+        android:textColorHint="#ffffff" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:textColor="#8e8e8e"
+        android:background="@drawable/button_login_style"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:onClick="Login"
+        android:text="Login"
+        tools:ignore="OnClick" />
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UnknownId" />
+
+
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_fb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonLoginFb"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="59dp" />
+
+</RelativeLayout>
