@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/novo4_fundo"
-    tools:context=".MainActivity">
+    tools:context=".app.PtLogin">
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,19 +45,6 @@
         android:inputType="textPassword" />
 
 
-    <Button
-        android:id="@+id/register_button"
-        android:layout_width="110dp"
-        android:layout_height="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="REGISTAR"
-        android:textColor="#ffffff"
-        android:onClick="openactivity_registo"
-        android:layout_marginBottom="21dp"
-        android:background="#11000000"
-        tools:ignore="OnClick" />
-
     <TextView
         android:id="@+id/esqueceu_password_text"
         android:layout_width="wrap_content"
@@ -67,7 +54,8 @@
         android:layout_marginBottom="154dp"
         android:hint="Esqueceu a Password"
         android:onClick="openactivity_esqueceupassword"
-        android:textColorHint="#ffffff" />
+        android:textColorHint="#ffffff"
+        tools:ignore="OnClick" />
 
 
     <Button
@@ -82,6 +70,18 @@
         android:onClick="Login"
         android:text="Login"
         tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTAR"
+        android:textColor="#ffffff"
+        android:onClick="openactivity_registo"
+        android:layout_marginBottom="21dp"
+        android:background="#11000000"
+        tools:ignore="OnClick" />
 
 
     <ProgressBar
@@ -95,15 +95,5 @@
 
 
 
-
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_fb_button"
-        android:layout_width="wrap_content"
-        android:layout_height="3dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="buttonLoginFb"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="59dp" />
 
 </RelativeLayout>
